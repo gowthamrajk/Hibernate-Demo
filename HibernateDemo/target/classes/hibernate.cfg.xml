@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+  "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+  "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+  <session-factory>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+   
+    <property name="connection.url">jdbc:mysql://localhost:3306/demo</property>
+    <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">Gowthamraj@258</property>
+    <property name="connection.pool_size">3</property>
+
+    <property name="show_sql">true</property>
+    <property name="format_sql">false</property>
+    <property name="hbm2ddl.auto">update</property>
+    
+    <property name="hibernate.cache.use_second_level_cache">true</property>  
+    <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>   
+    <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property> 
+    
+    <!-- <mapping class="com.gowthamrajk.model.Person"></mapping> 
+    <mapping class="com.gowthamrajk.model.Employee"></mapping>
+    <mapping class="com.gowthamrajk.model.Developer"></mapping>
+    <mapping class="com.gowthamrajk.model.Tester"></mapping>  
+    
+    <mapping class="com.gowthamrajk.onetoone.Car"></mapping>
+    <mapping class="com.gowthamrajk.onetoone.Engine"></mapping>   
+    
+    <mapping class="com.gowthamrajk.onetomany.Question"></mapping>
+    <mapping class="com.gowthamrajk.onetomany.Answer"></mapping> 
+    
+    <mapping class="com.gowthamrajk.manytoone.Owner"></mapping>
+    <mapping class="com.gowthamrajk.manytoone.Vehicle"></mapping> 
+    
+    <mapping class="com.gowthamrajk.manytomany.Cab"></mapping>
+    <mapping class="com.gowthamrajk.manytomany.CabUser"></mapping> -->
+    
+    <mapping class="com.gowthamrajk.cachingexample.UserDetails"></mapping> 
+    
+    <!--<mapping class="com.gowthamrajk.oneclasstomultipletable.Gadget"></mapping>
+    
+    <mapping class="com.gowthamrajk.jpapersistence.Doctor"></mapping>-->
+
+  </session-factory>
+</hibernate-configuration>
